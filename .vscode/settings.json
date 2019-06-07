@@ -1,9 +1,0 @@
-{
-  "git.ignoreLimitWarning": true,
-  "liveSassCompile.settings.formats":[
-    {
-        "format": "expanded",
-        "extensionName": ".css",
-        "savePath": "/css"
-    }]
-}
