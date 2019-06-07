@@ -9,7 +9,6 @@
     display: flex
     align-items: center
     justify-content: space-between
-    min-height: 80px
   &__mobile, &__landline
     text-align: right
   &__phone
@@ -58,6 +57,7 @@
     border-left: 1px solid rgba(#507fe1, 0.1)
     height: 80px
     width: 70px
+    margin: 5px 0
     &__line
       display: block
       width: 20px
@@ -75,5 +75,22 @@
     display: block
     font-size: 14px
     color: $text-color-light
-
-
+@media (max-width: 991px)
+  .navbar
+    &__mobile, &__landline
+      display: none
+@media (max-width: 576px)
+    .logo
+      display: none
+    .menu
+      top: 60px
+      transform: translateY(0)
+      &-button
+        height: 60px
+      &__nav
+        flex-direction: column
+        align-content: space-between
+        height: 100%
+      &__link
+        margin-bottom: 20px
+        
