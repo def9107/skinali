@@ -75,12 +75,29 @@ body {
 }
 
 .button {
+  text-decoration: none;
   border: none;
   text-transform: uppercase;
   padding: 25px 45px;
   background-color: #507fe1;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.button-fitting {
+  color: #507fe1;
+  background-color: #fff;
+}
+
+.button-add {
+  background-color: #7c9fe8;
+  color: #ffffff;
+}
+
+.button-like {
+  background-color: #507fe1;
+  width: 30px;
+  border: none;
 }
 
 .bg-secondary {
@@ -188,13 +205,13 @@ input[type="checkbox"]:checked + label:before {
   color: #ffffff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
 .menu_active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .menu__nav {
@@ -467,6 +484,80 @@ input[type="checkbox"]:checked + label:before {
   }
   .features-block__image {
     margin-bottom: 0;
+  }
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog__card {
+  margin-bottom: 30px;
+}
+
+.catalog-card {
+  min-width: 570px;
+  position: relative;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-card__buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog-card__button {
+  border: none;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 11px;
+  height: 30px;
+}
+
+.catalog-card__tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: rgba(80, 127, 225, 0.6);
+}
+
+.catalog-card__image {
+  display: block;
+}
+
+.catalog-card__link {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.catalog-card__link__link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1199px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalog-card {
+    min-width: 470px;
   }
 }
 /*# sourceMappingURL=style.css.map */

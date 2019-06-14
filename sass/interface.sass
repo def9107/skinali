@@ -20,12 +20,23 @@ body
   color: $primary
   +bold
 .button
+  text-decoration: none
   border: none
   text-transform: uppercase
   padding: 25px 45px
   background-color: $primary
   color: #ffffff
   +bold
+  &-fitting
+    color: $primary
+    background-color: #fff
+  &-add
+    background-color: lighten($primary, 10%)
+    color: #ffffff
+  &-like
+    background-color: $primary
+    width: 30px
+    border: none  
 .bg-secondary
   background: $bg-secondary
 .input
