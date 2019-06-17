@@ -752,4 +752,41 @@ input[type="checkbox"]:checked + label:before {
         flex-basis: 100%;
   }
 }
+
+.reviews {
+  background-color: #f6f7f9;
+}
+
+.reviews-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.reviews-slider__text {
+  max-width: 370px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  font-size: 15px;
+  font-style: italic;
+  padding: 22px;
+}
+
+.reviews-slider__text:before {
+  content: '';
+  position: absolute;
+  border: 10px solid transparent;
+  border-top: 10px solid #ffffff;
+  bottom: -20px;
+  left: 47%;
+}
+
+.reviews-slider__image {
+  display: block;
+  margin: 30px auto;
+}
 /*# sourceMappingURL=style.css.map */
