@@ -403,6 +403,7 @@ input[type="checkbox"]:checked + label:before {
   .offer-block {
     background: none;
     background-color: #fff;
+    text-align: center;
   }
 }
 
