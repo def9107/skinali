@@ -9,11 +9,19 @@
   &-card
     position: relative
     box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1)
+    overflow-y: hidden
+    &:hover
+      .catalog-card__buttons
+        opacity: 1
+        transform: translateY(0)
     &__buttons
       position: absolute
       bottom: 0
       right: 0
       display: flex
+      opacity: 0
+      transform: translateY(100%)
+      transition: 0.2s
     &__button
       border: none
       text-transform: uppercase
