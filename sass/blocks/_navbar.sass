@@ -26,21 +26,22 @@
     text-decoration: none
 .menu
   position: fixed
-  // z-index: -1
-  // top: 80px
-  // left: 0
-  // padding: 16px 0
-  // width: 100%
-  // background-color: $primary
-  // color: #ffffff
-  // transition: 0.2s
-  // transform: translateY(100%)
-  // &_active
-  //   transform: translateY(-100%)
-  // &__nav
-  //   display: flex
-  //   align-items: center
-  //   justify-content: space-around
+  z-index: 99
+  top: 90px
+  left: 0
+  padding: 16px 0
+  width: 100%
+  background-color: $primary
+  color: #ffffff
+  transition: 0.2s
+  transform: translateY(-200%)
+  &_active
+    transform: translateY(0)
+    opacity: 1
+  &__nav
+    display: flex
+    align-items: center
+    justify-content: space-around
   &__link
     text-decoration: none
     font-size: 17px
@@ -58,6 +59,10 @@
     height: 80px
     width: 70px
     margin: 5px 0
+    &:hover
+      cursor: pointer
+    &:focus
+      outline: none
     &__line
       display: block
       width: 20px
@@ -83,8 +88,7 @@
     .logo
       display: none
     .menu
-      top: 60px
-      transform: translateY(0)
+      top: 70px
       &-button
         height: 60px
       &__nav
